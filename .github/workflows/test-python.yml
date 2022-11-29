@@ -25,5 +25,6 @@ jobs:
         python -m pytest
     - name: Analysing the code with pylint
       run: |
+        touch report.txt
         pylint $(git ls-files '*.py') > report.txt
         cat report.txt
