@@ -23,3 +23,6 @@ jobs:
     - name: Run tests
       run: |
         python -m pytest
+    - name: Analysing the code with pylint
+      run: |
+        pylint $(git ls-files '*.py')
