@@ -2,7 +2,9 @@ name: Python CI
 
 on:
   workflow_dispatch:
-  push: ['main']
+  push:
+    branches:
+      - main
 
 jobs:
   tests:
@@ -13,4 +15,3 @@ jobs:
       - name: Print folder
         run: |
           ls
-          
