@@ -1,4 +1,4 @@
-*venv*
+*myenv*
 *pycache*
 *pytest_cache*
 *htmlcov*
